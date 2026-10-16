@@ -84,7 +84,7 @@ license: MIT
 📋 **[Conductor 決策卡 - Tier 2 Standard]**
 - **方向**：Frontend Component & UI
 - **風險**：低至中度（無跨模組破壞性變更，標準單元測試可覆蓋）
-- **技能鏈**：`frontend-developer` ➔ `/ponytail full` ➔ `unit-testing-test-generate`
+- **技能鏈**：`frontend-developer` (或 `/gemini-web-copilot --task code`) ➔ `tdd` ➔ `/ponytail full`
 ```
 
 ### Tier 3 / Tier 4 決策看板（完整詳細版）
@@ -93,9 +93,10 @@ license: MIT
 - **方向領域**：跨模組資料同步與架構設計
 - **風險評估**：高風險（涉及資料持久化與高併發連線，回滾複雜）
 - **擬調用技能鏈**：
-  1. `/gemini-web-copilot --task plan` (架構推演)
-  2. `backend-architect` + `/ponytail full` (落地實現)
-  3. `test` (全鏈路驗證)
+  1. `/find-skills` ➔ `/grill-me` (前瞻規劃)
+  2. `/gemini-web-copilot --task plan` (架構推演)
+  3. `/gemini-web-copilot --task code` + `backend-architect` ➔ `tdd` ➔ `/ponytail full` (落地實現)
+  4. `test` (全鏈路驗證)
 - 🛑 **外部發送範圍審核**：
   - 將發送之上下文：`package.json`, `src/sync/*.ts` (預估 3,500 Tokens)
   - 敏感檢查：已確認無硬編碼金鑰與隱私資料。

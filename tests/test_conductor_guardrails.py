@@ -45,11 +45,11 @@ class ConductorSimulator:
         elif "pdf" in prompt or "匯出" in prompt:
             tier = "2/3"
             direction = "Feature Integration / Document"
-            selected = ["backend-architect", "ponytail", "unit-testing-test-generate"]
+            selected = ["backend-architect", "tdd", "ponytail"]
         elif "百萬並發" in prompt or "同步架構" in prompt or "高併發" in prompt:
             tier = "3/4"
             direction = "Architecture / High-Concurrency"
-            selected = ["gemini-web-copilot", "backend-architect", "test"]
+            selected = ["gemini-web-copilot", "backend-architect", "tdd", "test"]
         else:
             tier = 2
             direction = "General"
