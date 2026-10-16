@@ -49,6 +49,19 @@ skill-conductor/
 npx skills add <your-github-repo-url> --skill skill-conductor
 ```
 
+### ⚡ One-Click Ecosystem Install (一鍵安裝所有核心技能)
+自動安裝 `/find-skills`、`/grill-me`、`/grill-with-docs`、`/gemini-web-copilot`、`/agent-browser`、`/ponytail` 等全部配套技能：
+
+**Windows (PowerShell):**
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\install-ecosystem.ps1
+```
+
+**macOS / Linux (Bash):**
+```bash
+bash ./scripts/install-ecosystem.sh
+```
+
 ### Manual Installation
 Copy this repository into your workspace's skill directory:
 ```bash
