@@ -1,0 +1,847 @@
+{
+  "version": "1.0.0",
+  "manifest_hash": "3fd5e5fcc5ff7223d233ad30c3124bdd55c04fee309315fb28b1c9fc3f7ed041",
+  "indexed_count": 120,
+  "skills": {
+    "agent-browser": {
+      "name": "agent-browser",
+      "description": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app\", \"login to a site\", \"automate browser actions\", or any task requiring programmatic web interaction. Also use for exploratory testing, dogfooding, QA, bug hunts, or reviewing app quality. Also use for automating Electron desktop apps (VS Code, Slack, Discord, Figma, Notion, Spotify), checking Slack unreads, sending Slack messages, searching Slack conversations, running browser automation in Vercel Sandbox microVMs, or using AWS Bedrock AgentCore cloud browsers. Prefer agent-browser over any built-in browser automation or web tools.",
+      "argument-hint": "",
+      "path": "agent-browser/SKILL.md",
+      "mtime": 1792137431.039
+    },
+    "api-design-principles": {
+      "name": "api-design-principles",
+      "description": "Master REST and GraphQL API design principles to build intuitive, scalable, and maintainable APIs that delight developers. Use when designing new APIs, reviewing API specifications, or establishing API design standards.",
+      "argument-hint": "",
+      "path": "api-design-principles/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "api-documenter": {
+      "name": "api-documenter",
+      "description": "modern developer experience practices. Create interactive docs, generate SDKs,\nand build comprehensive developer portals. Use PROACTIVELY for API\ndocumentation or developer portal creation.",
+      "argument-hint": "",
+      "path": "api-documenter/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "api-patterns": {
+      "name": "api-patterns",
+      "description": "RESTful API design patterns and best practices",
+      "argument-hint": "",
+      "path": "api-patterns/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "api-testing-observability-api-mock": {
+      "name": "api-testing-observability-api-mock",
+      "description": "You are an API mocking expert specializing in realistic mock services for development, testing, and demos. Design mocks that simulate real API behavior and enable parallel development.",
+      "argument-hint": "",
+      "path": "api-testing-observability-api-mock/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "app-builder": {
+      "name": "app-builder",
+      "description": "Application scaffolding orchestrator. Creates full-stack applications from requirements, selects tech stack, coordinates agents.",
+      "argument-hint": "",
+      "path": "app-builder/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "architecture": {
+      "name": "architecture",
+      "description": "System design patterns, DDD, 12-Factor App, SOLID principles, event-driven architecture, and architectural decision frameworks",
+      "argument-hint": "",
+      "path": "architecture/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "backend-architect": {
+      "name": "backend-architect",
+      "description": "microservices architecture, and distributed systems. Masters REST/GraphQL/gRPC\nAPIs, event-driven architectures, service mesh patterns, and modern backend\nframeworks. Handles service boundary definition, inter-service communication,\nresilience patterns, and observability. Use PROACTIVELY when creating new\nbackend services or APIs.",
+      "argument-hint": "",
+      "path": "backend-architect/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "backend-development-feature-development": {
+      "name": "backend-development-feature-development",
+      "description": "Orchestrate end-to-end backend feature development from requirements to deployment. Use when coordinating multi-phase feature delivery across teams and services.",
+      "argument-hint": "",
+      "path": "backend-development-feature-development/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "backend-security-coder": {
+      "name": "backend-security-coder",
+      "description": "validation, authentication, and API security. Use PROACTIVELY for backend\nsecurity implementations or security code reviews.",
+      "argument-hint": "",
+      "path": "backend-security-coder/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "behavioral-modes": {
+      "name": "behavioral-modes",
+      "description": "AI operational modes (brainstorm, implement, debug, review, teach, ship). Adapts behavior based on task type for Trust-Grade execution.",
+      "argument-hint": "",
+      "path": "behavioral-modes/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "brainstorm": {
+      "name": "brainstorm",
+      "description": "",
+      "argument-hint": "",
+      "path": "brainstorm/SKILL.md",
+      "mtime": 1792074186.959
+    },
+    "brainstorming": {
+      "name": "brainstorming",
+      "description": "Socratic questioning and discovery protocol. Ensures requirements clarity before implementation.",
+      "argument-hint": "",
+      "path": "brainstorming/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "clean-code": {
+      "name": "clean-code",
+      "description": "Code quality principles and best practices",
+      "argument-hint": "",
+      "path": "clean-code/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "codebase-design": {
+      "name": "codebase-design",
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "argument-hint": "",
+      "path": "codebase-design/SKILL.md",
+      "mtime": 1792137413.17
+    },
+    "context-budget": {
+      "name": "context-budget",
+      "description": "Context window budget management and selective capability loading for LLM token optimization.",
+      "argument-hint": "",
+      "path": "context-budget/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "continuous-learning": {
+      "name": "continuous-learning",
+      "description": "Extract reusable patterns from sessions and save them as knowledge",
+      "argument-hint": "",
+      "path": "continuous-learning/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "create": {
+      "name": "create",
+      "description": "",
+      "argument-hint": "",
+      "path": "create/SKILL.md",
+      "mtime": 1792074186.962
+    },
+    "database-design": {
+      "name": "database-design",
+      "description": "Database schema design, optimization patterns, distributed system consistency models, and zero-downtime migration strategies",
+      "argument-hint": "",
+      "path": "database-design/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "debug": {
+      "name": "debug",
+      "description": "",
+      "argument-hint": "",
+      "path": "debug/SKILL.md",
+      "mtime": 1792074186.966
+    },
+    "debugging-strategies": {
+      "name": "debugging-strategies",
+      "description": "Systematic debugging approaches for complex problems",
+      "argument-hint": "",
+      "path": "debugging-strategies/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "deploy": {
+      "name": "deploy",
+      "description": "",
+      "argument-hint": "",
+      "path": "deploy/SKILL.md",
+      "mtime": 1792074186.969
+    },
+    "deployment-procedures": {
+      "name": "deployment-procedures",
+      "description": "Production deployment workflows, rollback strategies, and CI/CD best practices.",
+      "argument-hint": "",
+      "path": "deployment-procedures/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "docker-patterns": {
+      "name": "docker-patterns",
+      "description": "Docker and containerization best practices",
+      "argument-hint": "",
+      "path": "docker-patterns/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "domain-modeling": {
+      "name": "domain-modeling",
+      "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+      "argument-hint": "",
+      "path": "domain-modeling/SKILL.md",
+      "mtime": 1792137373.828
+    },
+    "e2e-testing-patterns": {
+      "name": "e2e-testing-patterns",
+      "description": "Master end-to-end testing with Playwright and Cypress to build reliable test suites that catch bugs, improve confidence, and enable fast deployment. Use when implementing E2E tests, debugging flaky tests, or establishing testing standards.",
+      "argument-hint": "",
+      "path": "e2e-testing-patterns/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "enhance": {
+      "name": "enhance",
+      "description": "",
+      "argument-hint": "",
+      "path": "enhance/SKILL.md",
+      "mtime": 1792074186.974
+    },
+    "eval-harness": {
+      "name": "eval-harness",
+      "description": "Evaluation framework for measuring agent performance",
+      "argument-hint": "",
+      "path": "eval-harness/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "find-skills": {
+      "name": "find-skills",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+      "argument-hint": "",
+      "path": "find-skills/SKILL.md",
+      "mtime": 1792137249.126
+    },
+    "flutter-expert": {
+      "name": "flutter-expert",
+      "description": "multi-platform deployment. Handles state management, animations, testing, and\nperformance optimization for mobile, web, desktop, and embedded platforms. Use\nPROACTIVELY for Flutter architecture, UI implementation, or cross-platform\nfeatures.",
+      "argument-hint": "",
+      "path": "flutter-expert/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "frontend-design": {
+      "name": "frontend-design",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "argument-hint": "",
+      "path": "frontend-design/SKILL.md",
+      "mtime": 1792137457.482
+    },
+    "frontend-developer": {
+      "name": "frontend-developer",
+      "description": "client-side state management. Masters React 19, Next.js 15, and modern\nfrontend architecture. Optimizes performance and ensures accessibility. Use\nPROACTIVELY when creating UI components or fixing frontend issues.",
+      "argument-hint": "",
+      "path": "frontend-developer/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "frontend-mobile-development-component-scaffold": {
+      "name": "frontend-mobile-development-component-scaffold",
+      "description": "Scaffold React and React Native components with TypeScript, accessibility, styles, and tests. Use when building reusable UI components or establishing component structure.",
+      "argument-hint": "",
+      "path": "frontend-mobile-development-component-scaffold/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "frontend-patterns": {
+      "name": "frontend-patterns",
+      "description": "Frontend development patterns for React and modern frameworks",
+      "argument-hint": "",
+      "path": "frontend-patterns/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "frontend-security-coder": {
+      "name": "frontend-security-coder",
+      "description": "prevention, output sanitization, and client-side security patterns. Use\nPROACTIVELY for frontend security implementations or client-side security code\nreviews.",
+      "argument-hint": "",
+      "path": "frontend-security-coder/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "gemini-web-copilot": {
+      "name": "gemini-web-copilot",
+      "description": "Automates Google Gemini Web (gemini.google.com) via browser automation to write code, design system architecture, or perform planning workflows. Use when the user asks to use browser automation to enter Gemini Web (gemini.google.com), leverage their web Gemini account, Gems, or advanced models to write code, conduct planning, or review architectures.",
+      "argument-hint": "",
+      "path": "gemini-web-copilot/SKILL.md",
+      "mtime": 1792067907.343
+    },
+    "git-advanced-workflows": {
+      "name": "git-advanced-workflows",
+      "description": "Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and reflog to maintain clean history and recover from any situation. Use when managing complex Git histories, collaborating on feature branches, or troubleshooting repository issues.",
+      "argument-hint": "",
+      "path": "git-advanced-workflows/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "git-workflow": {
+      "name": "git-workflow",
+      "description": "Git workflow patterns and best practices",
+      "argument-hint": "",
+      "path": "git-workflow/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "grill-me": {
+      "name": "grill-me",
+      "description": "A relentless interview to sharpen a plan or design.",
+      "argument-hint": "",
+      "path": "grill-me/SKILL.md",
+      "mtime": 1792137276.035
+    },
+    "grill-with-docs": {
+      "name": "grill-with-docs",
+      "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "argument-hint": "",
+      "path": "grill-with-docs/SKILL.md",
+      "mtime": 1792137346.279
+    },
+    "grilling": {
+      "name": "grilling",
+      "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "argument-hint": "",
+      "path": "grilling/SKILL.md",
+      "mtime": 1792137295.474
+    },
+    "guizang-ppt-skill": {
+      "name": "guizang-ppt-skill",
+      "description": "生成横向翻页网页 PPT（单 HTML 文件），含 WebGL 背景、演讲者视图、观众屏同步、讲稿备注、章节幕封、数据大字报、图片网格等模板。提供两种风格：① \"电子杂志 × 电子墨水\"（衬线 + 流体背景 + 暖色） ② \"瑞士国际主义\"（无衬线 + 网格点阵 + IKB/柠檬黄/柠檬绿/安全橙高亮）。当用户需要制作分享 / 演讲 / 发布会风格的网页 PPT，或提到\"杂志风 PPT\"、\"瑞士风 PPT\"、\"Swiss Style\"、\"horizontal swipe deck\"时使用。",
+      "argument-hint": "",
+      "path": "guizang-ppt-skill/SKILL.md",
+      "mtime": 1792109375.548
+    },
+    "handoff": {
+      "name": "handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "argument-hint": "What will the next session be used for?",
+      "path": "handoff/SKILL.md",
+      "mtime": 1792137481.053
+    },
+    "i18n-localization": {
+      "name": "i18n-localization",
+      "description": "Internationalization and localization patterns for multi-language applications",
+      "argument-hint": "",
+      "path": "i18n-localization/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "improve-codebase-architecture": {
+      "name": "improve-codebase-architecture",
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "argument-hint": "",
+      "path": "improve-codebase-architecture/SKILL.md",
+      "mtime": 1792137395.684
+    },
+    "intelligent-routing": {
+      "name": "intelligent-routing",
+      "description": "Automatic agent selection and intelligent task routing. Analyzes user requests and selects the best specialist agent(s) for Trust-Grade execution.",
+      "argument-hint": "",
+      "path": "intelligent-routing/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "javascript-pro": {
+      "name": "javascript-pro",
+      "description": "APIs. Handles promises, event loops, and browser/Node compatibility. Use\nPROACTIVELY for JavaScript optimization, async debugging, or complex JS\npatterns.",
+      "argument-hint": "",
+      "path": "javascript-pro/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "javascript-testing-patterns": {
+      "name": "javascript-testing-patterns",
+      "description": "Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven development. Use when writing JavaScript/TypeScript tests, setting up test infrastructure, or implementing TDD/BDD workflows.",
+      "argument-hint": "",
+      "path": "javascript-testing-patterns/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "mcp-integration": {
+      "name": "mcp-integration",
+      "description": "Model Context Protocol (MCP) integration patterns for extending AI capabilities with external tools and data sources.",
+      "argument-hint": "",
+      "path": "mcp-integration/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "mobile-design": {
+      "name": "mobile-design",
+      "description": "Mobile UI/UX patterns for iOS and Android. Touch-first, platform-respectful design with React Native/Expo focus.",
+      "argument-hint": "",
+      "path": "mobile-design/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "mobile-developer": {
+      "name": "mobile-developer",
+      "description": "architecture patterns. Masters cross-platform development, native\nintegrations, offline sync, and app store optimization. Use PROACTIVELY for\nmobile features, cross-platform code, or app optimization.",
+      "argument-hint": "",
+      "path": "mobile-developer/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "mobile-security-coder": {
+      "name": "mobile-security-coder",
+      "description": "validation, WebView security, and mobile-specific security patterns. Use\nPROACTIVELY for mobile security implementations or mobile security code\nreviews.",
+      "argument-hint": "",
+      "path": "mobile-security-coder/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "modern-javascript-patterns": {
+      "name": "modern-javascript-patterns",
+      "description": "Master ES6+ features including async/await, destructuring, spread operators, arrow functions, promises, modules, iterators, generators, and functional programming patterns for writing clean, efficient JavaScript code. Use when refactoring legacy code, implementing modern patterns, or optimizing JavaScript applications.",
+      "argument-hint": "",
+      "path": "modern-javascript-patterns/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "nodejs-patterns": {
+      "name": "nodejs-patterns",
+      "description": "Node.js and backend framework best practices",
+      "argument-hint": "",
+      "path": "nodejs-patterns/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "orchestrate": {
+      "name": "orchestrate",
+      "description": "",
+      "argument-hint": "",
+      "path": "orchestrate/SKILL.md",
+      "mtime": 1792074186.976
+    },
+    "parallel-agents": {
+      "name": "parallel-agents",
+      "description": "Multi-agent orchestration patterns for complex tasks requiring multiple domain expertise or comprehensive analysis.",
+      "argument-hint": "",
+      "path": "parallel-agents/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "performance-profiling": {
+      "name": "performance-profiling",
+      "description": "Performance profiling principles. Core Web Vitals, measurement, analysis, and optimization.",
+      "argument-hint": "",
+      "path": "performance-profiling/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "plan": {
+      "name": "plan",
+      "description": "",
+      "argument-hint": "",
+      "path": "plan/SKILL.md",
+      "mtime": 1792074186.98
+    },
+    "plan-validation": {
+      "name": "plan-validation",
+      "description": "Quality gate for implementation plans. Validates schema compliance, cross-cutting concerns, and completeness scoring before user presentation.",
+      "argument-hint": "",
+      "path": "plan-validation/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "plan-writing": {
+      "name": "plan-writing",
+      "description": "Structured task planning with clear breakdowns, dependencies, and verification criteria.",
+      "argument-hint": "",
+      "path": "plan-writing/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "ponytail": {
+      "name": "ponytail",
+      "description": "Lazy senior dev mode: the smallest change that fully solves the task, and a reply a busy human understands in one read. Use on any coding task (writing, fixing, refactoring, reviewing, choosing dependencies) and when the user says \"ponytail\", \"be lazy\", \"simplest solution\", \"yagni\", or complains about over-engineering or bloat. Levels: lite, full (default), ultra.",
+      "argument-hint": "[lite|full|ultra]",
+      "path": "ponytail/SKILL.md",
+      "mtime": 1792109079.173
+    },
+    "ponytail-audit": {
+      "name": "ponytail-audit",
+      "description": "Quality audit of a whole repo: bugs, security holes, what breaks under real load, risky code without tests, slow paths, and what to delete, merge or split. Ranked, each finding explained in plain English. One-shot report, changes nothing. Use for \"audit this codebase\", \"review the whole repo\", \"find bloat\", \"what can I delete\", /ponytail-audit.",
+      "argument-hint": "",
+      "path": "ponytail-audit/SKILL.md",
+      "mtime": 1792109079.168
+    },
+    "ponytail-debt": {
+      "name": "ponytail-debt",
+      "description": "List every `shortcut:` comment (and older `ponytail:` ones) as a debt ledger. One-shot report, changes nothing. Use for \"ponytail debt\", \"what did ponytail defer\", \"list the shortcuts\", /ponytail-debt.",
+      "argument-hint": "",
+      "path": "ponytail-debt/SKILL.md",
+      "mtime": 1792109079.169
+    },
+    "ponytail-gain": {
+      "name": "ponytail-gain",
+      "description": "Show ponytail's measured savings (code, cost, speed) from the benchmark. One-shot display. Use for /ponytail-gain, \"what does ponytail save\", \"ponytail impact\".",
+      "argument-hint": "",
+      "path": "ponytail-gain/SKILL.md",
+      "mtime": 1792109079.17
+    },
+    "ponytail-help": {
+      "name": "ponytail-help",
+      "description": "Quick reference for ponytail levels, skills and commands. One-shot display. Use for /ponytail-help, \"ponytail help\", \"how do I use ponytail\".",
+      "argument-hint": "",
+      "path": "ponytail-help/SKILL.md",
+      "mtime": 1792109079.171
+    },
+    "ponytail-review": {
+      "name": "ponytail-review",
+      "description": "Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it fast enough, and is every line needed. Reads the connected code, not only the diff. Each finding is explained in plain English. Use for \"review this\", \"code review\", \"review the last commit\", \"review my PR\", \"is this over-engineered\", /ponytail-review.",
+      "argument-hint": "",
+      "path": "ponytail-review/SKILL.md",
+      "mtime": 1792109079.172
+    },
+    "pr": {
+      "name": "pr",
+      "description": "",
+      "argument-hint": "",
+      "path": "pr/SKILL.md",
+      "mtime": 1792074187.002
+    },
+    "pr-fix": {
+      "name": "pr-fix",
+      "description": "",
+      "argument-hint": "",
+      "path": "pr-fix/SKILL.md",
+      "mtime": 1792074186.986
+    },
+    "pr-merge": {
+      "name": "pr-merge",
+      "description": "",
+      "argument-hint": "",
+      "path": "pr-merge/SKILL.md",
+      "mtime": 1792074186.99
+    },
+    "pr-review": {
+      "name": "pr-review",
+      "description": "",
+      "argument-hint": "",
+      "path": "pr-review/SKILL.md",
+      "mtime": 1792074186.993
+    },
+    "pr-split": {
+      "name": "pr-split",
+      "description": "",
+      "argument-hint": "",
+      "path": "pr-split/SKILL.md",
+      "mtime": 1792074186.997
+    },
+    "pr-toolkit": {
+      "name": "pr-toolkit",
+      "description": "Pull request lifecycle domain knowledge — branch strategy detection, PR size classification, confidence-scored review, git-aware context, PR analytics, dependency management, and split/merge/describe operations.",
+      "argument-hint": "",
+      "path": "pr-toolkit/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "preflight": {
+      "name": "preflight",
+      "description": "",
+      "argument-hint": "",
+      "path": "preflight/SKILL.md",
+      "mtime": 1792074187.006
+    },
+    "preview": {
+      "name": "preview",
+      "description": "",
+      "argument-hint": "",
+      "path": "preview/SKILL.md",
+      "mtime": 1792074187.011
+    },
+    "production-readiness": {
+      "name": "production-readiness",
+      "description": "Production readiness audit domains, weighted scoring criteria, and check specifications for the /preflight workflow.",
+      "argument-hint": "",
+      "path": "production-readiness/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "python-development-python-scaffold": {
+      "name": "python-development-python-scaffold",
+      "description": "Scaffold Python projects with uv, package structure, type checking, and tests. Use when starting applications, services, or libraries with a consistent development setup.",
+      "argument-hint": "",
+      "path": "python-development-python-scaffold/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "python-pro": {
+      "name": "python-pro",
+      "description": "performance optimization, and production-ready practices. Expert in the latest\nPython ecosystem including uv, ruff, pydantic, and FastAPI. Use PROACTIVELY\nfor Python development, optimization, or advanced Python patterns.",
+      "argument-hint": "",
+      "path": "python-pro/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "python-testing-patterns": {
+      "name": "python-testing-patterns",
+      "description": "Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven development. Use when writing Python tests, setting up test suites, or implementing testing best practices.",
+      "argument-hint": "",
+      "path": "python-testing-patterns/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "quality-gate": {
+      "name": "quality-gate",
+      "description": "",
+      "argument-hint": "",
+      "path": "quality-gate/SKILL.md",
+      "mtime": 1792074187.028
+    },
+    "react-modernization": {
+      "name": "react-modernization",
+      "description": "Upgrade React applications to latest versions, migrate from class components to hooks, and adopt concurrent features. Use when modernizing React codebases, migrating to React Hooks, or upgrading to latest React versions.",
+      "argument-hint": "",
+      "path": "react-modernization/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "react-native-architecture": {
+      "name": "react-native-architecture",
+      "description": "Build production React Native apps with Expo, navigation, native modules, offline sync, and cross-platform patterns. Use when developing mobile apps, implementing native integrations, or architecting React Native projects.",
+      "argument-hint": "",
+      "path": "react-native-architecture/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "react-state-management": {
+      "name": "react-state-management",
+      "description": "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when setting up global state, managing server state, or choosing between state management solutions.",
+      "argument-hint": "",
+      "path": "react-state-management/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "retrospective": {
+      "name": "retrospective",
+      "description": "",
+      "argument-hint": "",
+      "path": "retrospective/SKILL.md",
+      "mtime": 1792074187.034
+    },
+    "review": {
+      "name": "review",
+      "description": "",
+      "argument-hint": "",
+      "path": "review/SKILL.md",
+      "mtime": 1792074187.038
+    },
+    "security-auditor": {
+      "name": "security-auditor",
+      "description": "cybersecurity, and compliance frameworks. Masters vulnerability assessment,\nthreat modeling, secure authentication (OAuth2/OIDC), OWASP standards, cloud\nsecurity, and security automation. Handles DevSecOps integration, compliance\n(GDPR/HIPAA/SOC2), and incident response. Use PROACTIVELY for security audits,\nDevSecOps, or compliance implementation.",
+      "argument-hint": "",
+      "path": "security-auditor/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "security-practices": {
+      "name": "security-practices",
+      "description": "Application security best practices including Zero Trust principles, OAuth 2.0 / OpenID Connect flows, API security, supply chain security, and vulnerability prevention",
+      "argument-hint": "",
+      "path": "security-practices/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "shell-conventions": {
+      "name": "shell-conventions",
+      "description": "PowerShell shell conventions for Windows. Avoid bash-isms. Reference before running terminal commands.",
+      "argument-hint": "",
+      "path": "shell-conventions/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "speckit.all": {
+      "name": "speckit.all",
+      "description": "",
+      "argument-hint": "",
+      "path": "speckit.all/SKILL.md",
+      "mtime": 1792074186.91
+    },
+    "speckit.analyze": {
+      "name": "speckit.analyze",
+      "description": "Perform a non-destructive cross-artifact consistency and quality analysis across spec.md, plan.md, and tasks.md after task generation.",
+      "argument-hint": "",
+      "path": "speckit.analyze/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.checker": {
+      "name": "speckit.checker",
+      "description": "Run static analysis tools and aggregate results.",
+      "argument-hint": "",
+      "path": "speckit.checker/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.checklist": {
+      "name": "speckit.checklist",
+      "description": "Generate a custom checklist for the current feature based on user requirements.",
+      "argument-hint": "",
+      "path": "speckit.checklist/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.clarify": {
+      "name": "speckit.clarify",
+      "description": "Identify underspecified areas in the current feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec.",
+      "argument-hint": "",
+      "path": "speckit.clarify/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.constitution": {
+      "name": "speckit.constitution",
+      "description": "Create or update the project constitution from interactive or provided principle inputs, ensuring all dependent templates stay in sync.",
+      "argument-hint": "",
+      "path": "speckit.constitution/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.diff": {
+      "name": "speckit.diff",
+      "description": "Compare two versions of a spec or plan to highlight changes.",
+      "argument-hint": "",
+      "path": "speckit.diff/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.implement": {
+      "name": "speckit.implement",
+      "description": "Execute the implementation plan by processing and executing all tasks defined in tasks.md (with Ironclad Anti-Regression Protocols)",
+      "argument-hint": "",
+      "path": "speckit.implement/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.migrate": {
+      "name": "speckit.migrate",
+      "description": "Migrate existing projects into the speckit structure by generating spec.md, plan.md, and tasks.md from existing code.",
+      "argument-hint": "",
+      "path": "speckit.migrate/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.plan": {
+      "name": "speckit.plan",
+      "description": "Execute the implementation planning workflow using the plan template to generate design artifacts.",
+      "argument-hint": "",
+      "path": "speckit.plan/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.prepare": {
+      "name": "speckit.prepare",
+      "description": "",
+      "argument-hint": "",
+      "path": "speckit.prepare/SKILL.md",
+      "mtime": 1792074187.041
+    },
+    "speckit.quizme": {
+      "name": "speckit.quizme",
+      "description": "Challenge the specification with Socratic questioning to identify logical gaps, unhandled edge cases, and robustness issues.",
+      "argument-hint": "",
+      "path": "speckit.quizme/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.reviewer": {
+      "name": "speckit.reviewer",
+      "description": "Perform code review with actionable feedback and suggestions.",
+      "argument-hint": "",
+      "path": "speckit.reviewer/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.specify": {
+      "name": "speckit.specify",
+      "description": "Create or update the feature specification from a natural language feature description.",
+      "argument-hint": "",
+      "path": "speckit.specify/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.status": {
+      "name": "speckit.status",
+      "description": "Display a dashboard showing feature status, completion percentage, and blockers.",
+      "argument-hint": "",
+      "path": "speckit.status/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.tasks": {
+      "name": "speckit.tasks",
+      "description": "Generate an actionable, dependency-ordered tasks.md for the feature based on available design artifacts.",
+      "argument-hint": "",
+      "path": "speckit.tasks/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.taskstoissues": {
+      "name": "speckit.taskstoissues",
+      "description": "Convert existing tasks into actionable, dependency-ordered GitHub issues for the feature based on available design artifacts.",
+      "argument-hint": "",
+      "path": "speckit.taskstoissues/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.tester": {
+      "name": "speckit.tester",
+      "description": "Execute tests, measure coverage, and report results.",
+      "argument-hint": "",
+      "path": "speckit.tester/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "speckit.validate": {
+      "name": "speckit.validate",
+      "description": "Validate that implementation matches specification requirements.",
+      "argument-hint": "",
+      "path": "speckit.validate/SKILL.md",
+      "mtime": 1769466542.0
+    },
+    "status": {
+      "name": "status",
+      "description": "",
+      "argument-hint": "",
+      "path": "status/SKILL.md",
+      "mtime": 1792074187.045
+    },
+    "strategic-compact": {
+      "name": "strategic-compact",
+      "description": "Context window management with strategic compaction",
+      "argument-hint": "",
+      "path": "strategic-compact/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "tdd": {
+      "name": "tdd",
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "argument-hint": "",
+      "path": "tdd/SKILL.md",
+      "mtime": 1792137527.443
+    },
+    "test": {
+      "name": "test",
+      "description": "",
+      "argument-hint": "",
+      "path": "test/SKILL.md",
+      "mtime": 1792074187.048
+    },
+    "testing-patterns": {
+      "name": "testing-patterns",
+      "description": "Testing strategies and patterns for quality assurance",
+      "argument-hint": "",
+      "path": "testing-patterns/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "triage": {
+      "name": "triage",
+      "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "argument-hint": "",
+      "path": "triage/SKILL.md",
+      "mtime": 1792137502.069
+    },
+    "typescript-advanced-types": {
+      "name": "typescript-advanced-types",
+      "description": "Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for building type-safe applications. Use when implementing complex type logic, creating reusable type utilities, or ensuring compile-time type safety in TypeScript projects.",
+      "argument-hint": "",
+      "path": "typescript-advanced-types/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "typescript-expert": {
+      "name": "typescript-expert",
+      "description": "Advanced TypeScript patterns and best practices",
+      "argument-hint": "",
+      "path": "typescript-expert/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "typescript-pro": {
+      "name": "typescript-pro",
+      "description": "safety. Handles complex type systems, decorators, and enterprise-grade\npatterns. Use PROACTIVELY for TypeScript architecture, type inference\noptimization, or advanced typing patterns.",
+      "argument-hint": "",
+      "path": "typescript-pro/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "ui-ux-pro-max": {
+      "name": "ui-ux-pro-max",
+      "description": "UI/UX design intelligence with anti-AI-slop philosophy. 50+ styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks.",
+      "argument-hint": "",
+      "path": "ui-ux-pro-max/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "unit-testing-test-generate": {
+      "name": "unit-testing-test-generate",
+      "description": "Generate comprehensive, maintainable unit tests across languages with strong coverage and edge case focus.",
+      "argument-hint": "",
+      "path": "unit-testing-test-generate/SKILL.md",
+      "mtime": 1791936126.0
+    },
+    "upgrade": {
+      "name": "upgrade",
+      "description": "",
+      "argument-hint": "",
+      "path": "upgrade/SKILL.md",
+      "mtime": 1792074187.056
+    },
+    "verification-loop": {
+      "name": "verification-loop",
+      "description": "Comprehensive verification running all quality gates",
+      "argument-hint": "",
+      "path": "verification-loop/SKILL.md",
+      "mtime": 1774142682.0
+    },
+    "webapp-testing": {
+      "name": "webapp-testing",
+      "description": "Web application testing principles. E2E, Playwright, component testing, and deep audit strategies.",
+      "argument-hint": "",
+      "path": "webapp-testing/SKILL.md",
+      "mtime": 1774142682.0
+    }
+  }
+}
