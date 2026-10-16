@@ -54,15 +54,20 @@ license: MIT
 
 | 分級 | 核心風險訊號 (Risk Signals) | 輔助規模指標 | 目標調度策略 |
 | :--- | :--- | :--- | :--- |
-| **Tier 1 (Micro)** | 單一模組、純內部邏輯、不碰 DB/金流/Auth、極易回滾、需求極明確 | 修改 < 20 行，1~2 檔案 | `/ponytail full`（或 `lite`）<br/>*🚨 負面規則：嚴禁調用外部重型工具* |
-| **Tier 2 (Standard)** | 明確業務功能、既有架構內擴充、輕度資料存取、標準單元測試可覆蓋 | 2~5 檔案，獨立組件 | 規劃優先：`/find-skills` ➔ `/grill-me`<br/>落地實施：領域技能 (如 `frontend-developer`、`backend-architect`) 或 `/gemini-web-copilot --task code` ➔ `tdd` ➔ `/ponytail full` |
-| **Tier 3 (Complex)** | 跨模組相依、涉及 DB Migration / 鑑權 / 金流、回滾成本高、深層 RCA 除錯 | 5~15 檔案，新子系統 | 規劃優先：`/find-skills` ➔ `/grill-me` (或 `grill-with-docs`) ➔ 外部隱私門閘 ➔ `/gemini-web-copilot --task plan`<br/>落地實施：`/gemini-web-copilot --task code` + 領域專長架構落地 ➔ `tdd` ➔ `/ponytail full` ➔ `test` |
-| **Tier 4 (Epic)** | 需求高度模糊、底層技術選型、跨服務架構、錯誤將導致系統性故障 | 全局重構、全新專案 | 規劃優先：`/find-skills` ➔ `/grill-me` (Socratic 樹狀詰問) ➔ `domain-modeling` ➔ 外部隱私門閘 ➔ `/gemini-web-copilot --task plan`<br/>落地實施：`/gemini-web-copilot --task code` 深度生成 ➔ `speckit.tasks` ➔ `speckit.implement` ➔ 嚴格全鏈路驗證 |
+| **Tier 1 (Micro)** | 單一模組、局部純邏輯、無障礙/CSS 微調、單頁簡報、極易回滾 | 修改 < 20 行，1~2 檔案 | `/ponytail full`（或 `lite`）<br/>*專項擴充*：UI 視覺導入 `frontend-design`，簡報輸出導入 `guizang-ppt-skill`<br/>*🚨 負面規則：嚴禁調用外部重型工具* |
+| **Tier 2 (Standard)** | 明確業務功能、既有架構內擴充、輕度資料存取、標準單元測試可覆蓋 | 2~5 檔案，獨立組件 | 規劃優先：`/find-skills` ➔ `/grill-me`<br/>落地實施：領域專長 (如 `frontend-design`、`frontend-developer`、`backend-architect`) 或 `/gemini-web-copilot --task code`<br/>測試與收斂：`tdd` (Public Seams/Vertical Slice) ➔ `/ponytail full`<br/>*專項擴充*：瀏覽器自動化/QA 導入 `agent-browser`，議題/PR 分派導入 `triage` |
+| **Tier 3 (Complex)** | 跨模組相依、涉及 DB Migration / 鑑權 / 金流、架構摩擦重構、回滾成本高 | 5~15 檔案，新子系統 | 規劃優先：`/find-skills` ➔ `/grill-me` (或 `grill-with-docs`) ➔ 外部隱私門閘 ➔ `/gemini-web-copilot --task plan`<br/>落地實施：`/gemini-web-copilot --task code` + 領域專長架構落地 ➔ `tdd` ➔ `/ponytail full` ➔ `test`<br/>*專項擴充*：代碼庫深層重構調用 `improve-codebase-architecture` + `codebase-design` |
+| **Tier 4 (Epic)** | 需求高度模糊、底層技術選型、跨服務架構、錯誤將導致系統性故障 | 全局重構、全新專案 | 規劃優先：`/find-skills` ➔ `/grill-me` (Socratic 樹狀詰問) ➔ `domain-modeling` (ADR/Glossary) ➔ 外部門閘 ➔ `/gemini-web-copilot --task plan`<br/>落地實施：`/gemini-web-copilot --task code` 深度生成 ➔ `speckit.tasks` ➔ `speckit.implement`<br/>測試與交接：`tdd` ➔ `test` 全鏈路驗證；會話結束可透過 `handoff` 壓縮交接 |
 
 ### 規劃優先與落地鐵律 (Planning & Implementation Rules)
-- **探索在先**：任何涉及設計、規劃 (Plan) 或新需求的任務，**優先執行 `/find-skills`** 檢視生態技能庫是否已有成熟工具可用，避免重複造輪子。
-- **詰問對齊**：規劃起步必須**調用 `/grill-me` (或 `grill-with-docs`) 進行決策樹深度詰問**，逐一釐清依賴關係與架構假設，直到前沿決策全數落定後方可產出正式 Plan。
-- **落地生成**：在落地實施階段（Implementation），除本地領域技能外，**積極結合 `/gemini-web-copilot --task code`** 利用百萬 Token 上下文與大模型完整代碼生成能力產出高質量代碼，隨後透過 `tdd` (紅綠循環/Seams 驗證) 與 `/ponytail` (精簡收斂與反過度工程) 進行雙重品質保障。
+- **探索在先 (`/find-skills`)**：任何涉及設計、規劃 (Plan) 或新需求的任務，**優先執行 `/find-skills`** 檢視生態技能庫是否已有成熟工具可用，避免重複造輪子。
+- **詰問對齊 (`/grill-me` / `grill-with-docs`)**：規劃起步必須**調用 `/grill-me` 進行決策樹深度詰問**，若需同步產出技術決策紀錄則調用 `grill-with-docs` + `domain-modeling`，逐一釐清依賴關係與架構假設，直到前沿決策全數落定後方可產出正式 Plan。
+- **設計風格專項 (`frontend-design` / `guizang-ppt-skill`)**：前端視覺開發嚴格遵循 `frontend-design` 摒棄模板化預設（反 AI-Slop）；演講與展示場景調度 `guizang-ppt-skill` 生成高品質單頁橫向翻頁 PPT。
+- **落地生成 (`/gemini-web-copilot --task code`)**：在實作階段，除本地領域技能外，**積極結合 `/gemini-web-copilot --task code`** 利用百萬 Token 上下文與大模型完整代碼生成能力產出高質量代碼。
+- **嚴格驗證 (`tdd`)**：所有代碼落地均強制導入 `tdd`（先定界 Public Seams、撰寫測試、垂直切片推進），杜絕內部細節 mock 與脆弱測試。
+- **精簡收斂 (`/ponytail`)**：落地後強制套用 `/ponytail full` 進行 YAGNI 檢查、消除無請求抽象與非必要依賴，確保最小乾淨 Diff。
+- **跨瀏覽器與環境自動化 (`agent-browser`)**：凡涉及實際網頁互動、表單操作、螢幕截圖或端對端探索式測試，優先調度 `agent-browser` 透過 CDP 精確操控。
+- **議題流轉與會話交接 (`triage` / `handoff`)**：GitHub Issues/PRs 透過 `triage` 進入標準狀態機並撰寫 Agent Brief；複雜會話即將告一段落時，調用 `handoff` 產出脫敏交接文件至臨時目錄。
 
 ### 邊界案例（Tier 2 與 Tier 3 之間）仲裁規則
 1. 若任務特徵介於 Tier 2 與 Tier 3 之間（如涉及跨模組或核心業務數據存取），**優先判定為較高風險之 Tier 3**，落實架構審慎性。

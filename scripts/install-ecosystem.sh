@@ -14,6 +14,10 @@ declare -a SKILLS=(
   "https://github.com/mattpocock/skills|tdd"
   "https://github.com/mattpocock/skills|codebase-design"
   "https://github.com/mattpocock/skills|improve-codebase-architecture"
+  "https://github.com/mattpocock/skills|triage"
+  "https://github.com/mattpocock/skills|handoff"
+  "https://github.com/anthropics/claude-plugins-official|frontend-design"
+  "https://github.com/op7418/guizang-ppt-skill|guizang-ppt-skill"
   "https://github.com/vercel-labs/agent-browser|agent-browser"
   "https://github.com/dietrichgebert/ponytail|ponytail"
 )

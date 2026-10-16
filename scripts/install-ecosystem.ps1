@@ -29,6 +29,10 @@ $skillsToInstall = @(
     @{ Name = "tdd"; Source = "https://github.com/mattpocock/skills"; Skill = "tdd" },
     @{ Name = "codebase-design"; Source = "https://github.com/mattpocock/skills"; Skill = "codebase-design" },
     @{ Name = "improve-codebase-architecture"; Source = "https://github.com/mattpocock/skills"; Skill = "improve-codebase-architecture" },
+    @{ Name = "triage"; Source = "https://github.com/mattpocock/skills"; Skill = "triage" },
+    @{ Name = "handoff"; Source = "https://github.com/mattpocock/skills"; Skill = "handoff" },
+    @{ Name = "frontend-design"; Source = "https://github.com/anthropics/claude-plugins-official"; Skill = "frontend-design" },
+    @{ Name = "guizang-ppt-skill"; Source = "https://github.com/op7418/guizang-ppt-skill"; Skill = "guizang-ppt-skill" },
     @{ Name = "agent-browser"; Source = "https://github.com/vercel-labs/agent-browser"; Skill = "agent-browser" },
     @{ Name = "ponytail"; Source = "https://github.com/dietrichgebert/ponytail"; Skill = "ponytail" }
 )

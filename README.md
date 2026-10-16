@@ -54,7 +54,7 @@ npx skills add https://github.com/workingharry/skill-conductor --skill skill-con
 
 #### 🍎 macOS / Linux 一行直裝指令 (Terminal Copy & Paste):
 ```bash
-for s in "https://github.com/vercel-labs/skills|find-skills" "https://github.com/mattpocock/skills|grill-me" "https://github.com/mattpocock/skills|grill-with-docs" "https://github.com/mattpocock/skills|domain-modeling" "https://github.com/mattpocock/skills|tdd" "https://github.com/vercel-labs/agent-browser|agent-browser" "https://github.com/dietrichgebert/ponytail|ponytail"; do IFS="|" read -r url name <<< "$s"; npx -y skills add "$url" --skill "$name" --yes; done; [ ! -d ".agents/skills/gemini-web-copilot" ] && git clone https://github.com/workingharry/gemini-web-copilot.git .agents/skills/gemini-web-copilot
+for s in "https://github.com/vercel-labs/skills|find-skills" "https://github.com/mattpocock/skills|grill-me" "https://github.com/mattpocock/skills|grill-with-docs" "https://github.com/mattpocock/skills|domain-modeling" "https://github.com/mattpocock/skills|tdd" "https://github.com/mattpocock/skills|codebase-design" "https://github.com/mattpocock/skills|improve-codebase-architecture" "https://github.com/mattpocock/skills|triage" "https://github.com/mattpocock/skills|handoff" "https://github.com/anthropics/claude-plugins-official|frontend-design" "https://github.com/op7418/guizang-ppt-skill|guizang-ppt-skill" "https://github.com/vercel-labs/agent-browser|agent-browser" "https://github.com/dietrichgebert/ponytail|ponytail"; do IFS="|" read -r url name <<< "$s"; npx -y skills add "$url" --skill "$name" --yes; done; [ ! -d ".agents/skills/gemini-web-copilot" ] && git clone https://github.com/workingharry/gemini-web-copilot.git .agents/skills/gemini-web-copilot
 ```
 
 或者使用遠端 cURL 腳本執行：
@@ -64,7 +64,7 @@ curl -fsSL https://raw.githubusercontent.com/workingharry/skill-conductor/main/s
 
 #### 🪟 Windows (PowerShell) 一行直裝指令:
 ```powershell
-@("https://github.com/vercel-labs/skills|find-skills", "https://github.com/mattpocock/skills|grill-me", "https://github.com/mattpocock/skills|grill-with-docs", "https://github.com/mattpocock/skills|domain-modeling", "https://github.com/mattpocock/skills|tdd", "https://github.com/vercel-labs/agent-browser|agent-browser", "https://github.com/dietrichgebert/ponytail|ponytail") | ForEach-Object { $s, $k = $_ -split '\|'; npx -y skills add $s --skill $k --yes }; if (-not (Test-Path .agents\skills\gemini-web-copilot)) { git clone https://github.com/workingharry/gemini-web-copilot.git .agents\skills\gemini-web-copilot }
+@("https://github.com/vercel-labs/skills|find-skills", "https://github.com/mattpocock/skills|grill-me", "https://github.com/mattpocock/skills|grill-with-docs", "https://github.com/mattpocock/skills|domain-modeling", "https://github.com/mattpocock/skills|tdd", "https://github.com/mattpocock/skills|codebase-design", "https://github.com/mattpocock/skills|improve-codebase-architecture", "https://github.com/mattpocock/skills|triage", "https://github.com/mattpocock/skills|handoff", "https://github.com/anthropics/claude-plugins-official|frontend-design", "https://github.com/op7418/guizang-ppt-skill|guizang-ppt-skill", "https://github.com/vercel-labs/agent-browser|agent-browser", "https://github.com/dietrichgebert/ponytail|ponytail") | ForEach-Object { $s, $k = $_ -split '\|'; npx -y skills add $s --skill $k --yes }; if (-not (Test-Path .agents\skills\gemini-web-copilot)) { git clone https://github.com/workingharry/gemini-web-copilot.git .agents\skills\gemini-web-copilot }
 ```
 
 ### Manual Installation
