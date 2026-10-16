@@ -46,27 +46,32 @@ skill-conductor/
 
 ### Using `npx skills`
 ```bash
-npx skills add <your-github-repo-url> --skill skill-conductor
+npx skills add https://github.com/workingharry/skill-conductor --skill skill-conductor
 ```
 
 ### ⚡ One-Click Ecosystem Install (一鍵安裝所有核心技能)
 自動安裝 `/find-skills`、`/grill-me`、`/grill-with-docs`、`/gemini-web-copilot`、`/agent-browser`、`/ponytail` 等全部配套技能：
 
-**Windows (PowerShell):**
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install-ecosystem.ps1
+#### 🍎 macOS / Linux 一行直裝指令 (Terminal Copy & Paste):
+```bash
+for s in "https://github.com/vercel-labs/skills|find-skills" "https://github.com/mattpocock/skills|grill-me" "https://github.com/mattpocock/skills|grill-with-docs" "https://github.com/mattpocock/skills|domain-modeling" "https://github.com/mattpocock/skills|tdd" "https://github.com/vercel-labs/agent-browser|agent-browser" "https://github.com/dietrichgebert/ponytail|ponytail"; do IFS="|" read -r url name <<< "$s"; npx -y skills add "$url" --skill "$name" --yes; done; [ ! -d ".agents/skills/gemini-web-copilot" ] && git clone https://github.com/workingharry/gemini-web-copilot.git .agents/skills/gemini-web-copilot
 ```
 
-**macOS / Linux (Bash):**
+或者使用遠端 cURL 腳本執行：
 ```bash
-bash ./scripts/install-ecosystem.sh
+curl -fsSL https://raw.githubusercontent.com/workingharry/skill-conductor/main/scripts/install-ecosystem.sh | bash
+```
+
+#### 🪟 Windows (PowerShell) 一行直裝指令:
+```powershell
+@("https://github.com/vercel-labs/skills|find-skills", "https://github.com/mattpocock/skills|grill-me", "https://github.com/mattpocock/skills|grill-with-docs", "https://github.com/mattpocock/skills|domain-modeling", "https://github.com/mattpocock/skills|tdd", "https://github.com/vercel-labs/agent-browser|agent-browser", "https://github.com/dietrichgebert/ponytail|ponytail") | ForEach-Object { $s, $k = $_ -split '\|'; npx -y skills add $s --skill $k --yes }; if (-not (Test-Path .agents\skills\gemini-web-copilot)) { git clone https://github.com/workingharry/gemini-web-copilot.git .agents\skills\gemini-web-copilot }
 ```
 
 ### Manual Installation
 Copy this repository into your workspace's skill directory:
 ```bash
 # Antigravity / Agent Skills standard path:
-cp -r skill-conductor .agents/skills/skill-conductor
+git clone https://github.com/workingharry/skill-conductor.git .agents/skills/skill-conductor
 ```
 
 ---
